@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e2e2e2;
+}
+
+/* --- header --- */
+.header {
+    padding: 0px 100px;
+    height: 70px;
+    background: #313434;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
+}
+
+.header__logo {
+    font-family: 'Lobster', cursive;
+    font-size: 26px;
+    font-weight: 500;
+    color: #f2f2f2;
+}
+
+.header__ul {
+    display: flex;
+    align-items: center;
+}
+
+.header__a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 12px;
+    color: #f2f2f2;
+    text-decoration-line: none;
+}
+
+.header__a i {
+    font-size: 36px;
+}
+
+
+
+/* --- region login --- */
+.login  {
+    padding: 30px;
+    /* fallback for old browsers */
+    background: #2b5876;  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #4e4376, #2b5876); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 60px 68px 40px;
+    min-height: 600px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container > h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label {
+    font-size: 14px;
+}
+
+.login__container--remember-me {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+}
+
+.login__container--remember-me a {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover {
+    text-decoration: underline;
+}
+
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px 0px 10px 0px;
+}
+
+.login__container--social-media > div > img {
+    height: 30px;
+    margin: 0px 10px 0px 0px;
+}
+
+.login__container--register {
+    font-size: 14px;
+}
+
+.login__container--register a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid #FFFFFF;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+::placeholder {
+    color: #FFFFFF;
+}
+
+.button {
+    height: 50px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+
+
+/* --- footer --- */
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #313434;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer a {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

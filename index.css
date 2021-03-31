@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e2e2e2;
+}
+
+/* --- header --- */
+.header {
+    padding: 0px 100px;
+    height: 70px;
+    background: #313434;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
+}
+
+.header__logo {
+    font-family: 'Lobster', cursive;
+    font-size: 26px;
+    font-weight: 500;
+    color: #f2f2f2;
+}
+
+.header__ul {
+    display: flex;
+    align-items: center;
+}
+
+.header__a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 12px;
+    color: #f2f2f2;
+    text-decoration-line: none;
+}
+
+.header__a i {
+    font-size: 36px;
+}
+
+
+/* --- nav --- */
+.nav {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: greenyellow; */
+}
+
+.nav__title {
+    padding-bottom: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #313434;
+}
+
+.nav__browser {
+    width: 100%;
+    padding: 0px 22px;
+    max-width: 320px;
+    border-radius: 4px;
+    height: 32px;
+    border: 2px solid #313434;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #313434;
+    outline-style: none;
+}
+
+/* --- category --- */
+.category__title {
+    padding: 42px 0px 18px 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* --- tarjetas --- */
+.tarjetas {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    margin: 12px 6px;
+    border: 3px solid rgb(35, 35, 40);
+    border-radius: 8px;
+    width: 300px;
+    background: rgb(35, 35, 40);
+    overflow: hidden;
+}
+
+.tarjeta__img {
+    height: 180px;
+    width: 300px;
+    position: relative;
+    /* clip-path: polygon(0 0,100% 0,100% 95%, 0 100%); */
+    object-fit: cover;
+}
+
+.tarjeta__img img {
+    height: 180px;
+    display: block;
+}
+
+.fa-play-circle {
+    font-size: 120px;
+    padding: 30px 90px;
+    /* background: rgba(255, 255, 255, 0.5); */
+    color: rgba(242, 242, 242, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* display: none; */
+    cursor: pointer;
+}
+
+.fa-play-circle:hover {
+    /* display: inline; */
+    color: rgba(242, 242, 242, 0.5);
+}
+
+.detalles {
+    /* margin-top: 6px;
+    margin-bottom: 6px; */
+    color: #f2f2f2;
+    padding: 4px 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.detalles__texto {
+    padding-left: 8px;
+}
+
+.detalles__iconos {
+    /* margin: 0%; */
+    padding: 0%;
+}
+
+.detalles p {
+    margin: 4px 0px;
+}
+
+.detalles a {
+    /* margin: 0px 16px; */
+    /* padding: 4px 6px; */
+    /* border: 1px solid #dadada; */
+    /* border-radius: 26px; */
+    font-size: 32px;
+    font-weight: 400;
+    color: #cfcfcf;
+    text-decoration: none;
+}
+
+.detalles a:hover {
+    color: #FFFFFF;
+    /* border: 1px solid #ffffff; */
+}
+
+
+/* --- footer --- */
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #313434;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer a {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .header__ul {
+        display: none;
+    }
+
+    .nav__title {
+        padding-bottom: 20px;
+        font-size: 26px;
+    }
+    
+    .nav__browser {
+        width: 76vw;
+        /* max-width: 290px; */
+    }
+
+    .footer {
+        height: 160px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer a {
+        padding: 10px 16px;
+    }
+}
